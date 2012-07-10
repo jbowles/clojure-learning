@@ -55,3 +55,10 @@
 
 (thread-test 2)
 
+;; define an exception handler for functions called witin threads
+(Thread/setDefaultUncaughtExceptionHandler
+  (proxy [Thread$UncaughtExceptionHandler] []
+    (uncaughtException [thread throwable]
+      ; print message in exception
+      (println (.. throwable .getCause .getMessage)))))
+

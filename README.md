@@ -2,7 +2,7 @@
 Learn me some clojure
 
 ## Handy Reference Types Table
-I ripped off the following table from [R. Mark Volkman](http://java.ociweb.com/mark/clojure/article.html#ReferenceTypes); his tutorial is by the most comprehensive, free, up-to-date, cojure tutorail I have found yet. Bravo.
+I ripped off the following table from [R. Mark Volkman](http://java.ociweb.com/mark/clojure/article.html#ReferenceTypes); his tutorial is by far the most comprehensive and up-to-date free clojure tutorail I have found yet. Bravo.
 
  <table border="1" style="font-size:8pt; width:100%">
       <tr>
