@@ -1,0 +1,4 @@
+(def *creds* (make-oauth-creds "E4XIMeoxvEXlmqlOnLt5QQ"
+                               "UOdbYIlt2nyyIEz2D0bytouaGYk7nIcATrcHvfR8W4o"
+                               "297521078-AbKTqzhO7m2EXtX37vGY4wWjAYYX9adO6Aywg8bX"
+                               "aTZ7GenQUzDEWQmnNAf6cd3RvPJH8d3hB1cld9qUXGo"))
