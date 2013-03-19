@@ -13,6 +13,7 @@
 ;(:foo (1 2 3) [4 5 6])
 (class (list :foo (list 1 2 3) [4 5 6])) ;clojure.lang.PersistentList
 ;
+;; Single tick is syntactic sugar for list
 '(:foo (list 1 2 3) [4 5 6])
 ;(:foo (list 1 2 3) [4 5 6])
 ;
@@ -33,8 +34,9 @@
 ;; maintains orderd key-value
 ;; Small hash maps will be created as ArrayMap by default --- linear lookup performance
 
-;; set  Set <hashed, sorted>
+;; set  Set <hashed, sorted> 
 ;; for unique set of elements
+;;;; Similar to Set in Python
 #{:a :b :c "d"}
 (class #{:a :b :c "d"}) ;clojure.langPersistentHashSet
 (hash-set :a :b :d :c)
@@ -277,7 +279,7 @@
 ;;     SEQUENCES ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;Sequence  iSeq
-;; is an interface to a data type, not a data type
+;; is an interface to a data type, not a data type itself
 (seq [1 2 3])
 ;; we have defined a sequence (interface) to the the vector
 (class (seq [1 2 3])) ;clojure.lang.PersistentVector$ChunkedSeq  -> (.getClass (seq [1 2 3]))
@@ -315,5 +317,3 @@
 (use '[clojure.data.json :only (read-json json-str)])
 (json-str {:color "red" :name "apple"})
 (read-json "{\"width\": 300, \"height\": 200}")
-
-

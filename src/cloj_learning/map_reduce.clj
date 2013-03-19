@@ -1,5 +1,5 @@
-;(map #(.trim %)
-;    (re-split #"[\:\,]" "Juice: 1.15, Sandwich: 4.65, Banana: 0.99"))
+(map #(.trim %)
+    (re-split #"[\:\,]" "Juice: 1.15, Sandwich: 4.65, Banana: 0.99"))
 
 (defn trim [s]
   (.trim s))
